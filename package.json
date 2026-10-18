@@ -1,12 +1,15 @@
 {
-  "name": "@quilt/nomad",
+  "name": "@superinstance/quilt-nomad",
   "version": "0.1.0",
   "description": "Quilt as a control plane for HashiCorp Nomad. Edit a spreadsheet cell; the Nomad cluster reconfigures instantly.",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "tsx --test test/*.test.ts",
@@ -22,7 +25,15 @@
     "typescript": "^7.0.2",
     "tsx": "^4.7.0"
   },
-  "keywords": ["nomad", "hashicorp", "orchestration", "control-plane", "quilt", "cells", "jobs"],
+  "keywords": [
+    "nomad",
+    "hashicorp",
+    "orchestration",
+    "control-plane",
+    "quilt",
+    "cells",
+    "jobs"
+  ],
   "engines": {
     "node": ">=18"
   }

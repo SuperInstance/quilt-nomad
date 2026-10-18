@@ -1,5 +1,5 @@
 /**
- * @quilt/nomad — main entry
+ * @superinstance/quilt-nomad — main entry
  *
  * Quilt as a control plane for HashiCorp Nomad. Edit a cell; the
  * Nomad cluster reconfigures. The user never has to touch a
