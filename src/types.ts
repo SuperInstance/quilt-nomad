@@ -1,5 +1,5 @@
 /**
- * @quilt/nomad — core types
+ * @superinstance/quilt-nomad — core types
  *
  * The bridge between Quilt cells and Nomad jobs. A Quilt sheet is
  * compiled into one or more Nomad job specifications; cell changes
