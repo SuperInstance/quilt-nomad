@@ -104,8 +104,8 @@ The mapping is convention over configuration. You don't write HCL; you write Qui
 **1. Deploy a service from a sheet:**
 
 ```ts
-import { QuiltEngine } from '@quilt/core';
-import { NomadEngine } from '@quilt/nomad';
+import { QuiltEngine } from '@superinstance/quilt-core';
+import { NomadEngine } from '@superinstance/quilt-nomad';
 
 const nomad = new NomadEngine({ address: 'http://nomad:4646' });
 const quilt = new QuiltEngine('my-app');
@@ -199,7 +199,7 @@ await nomad.apply(quilt.currentSheet());
 
 ```bash
 # Install
-npm install @quilt/nomad
+npm install @superinstance/quilt-nomad
 
 # Run the dev example
 git clone https://github.com/SuperInstance/quilt-nomad

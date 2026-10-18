@@ -17,8 +17,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@quilt/core": "*",
-    "@quilt/sdk": "*"
+    "@superinstance/quilt-core": "^0.3.3",
+    "@superinstance/quilt-sdk": "^0.2.6"
   },
   "devDependencies": {
     "@types/node": "^26.4.1",
