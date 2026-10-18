@@ -8,8 +8,13 @@
 import { NomadClient } from './nomad-client.js';
 import { CellAdapter } from './adapters/cell-adapter.js';
 import type {
-  NomadConfig, NomadJobSpec, ApplyResult, CompiledNomadJobs, QuiltSheetLike,
+  NomadConfig, NomadJobSpec, ApplyResult, CompiledNomadJobs,
 } from './types.js';
+// QuiltSheetLike is defined in the cell adapter, not in ./types.js. It was
+// imported from the wrong module, so it resolved to nothing -- which made
+// `sheet` an `any`, which made every callback parameter an implicit `any`,
+// and the typecheck failed on BOTH errors. One import, two failures.
+import type { QuiltSheetLike } from './adapters/cell-adapter.js';
 
 export interface NomadEngineOptions {
   config: NomadConfig;
